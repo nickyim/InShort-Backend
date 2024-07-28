@@ -6,7 +6,8 @@ from scripts.query_wLangChain import get_response  # Import custom function to g
 
 # Create a Flask app instance
 app = Flask(__name__)
-CORS(app)  # Enable CORS for the app
+CORS(app, resources={r"/api/*": {"origins": "https://in-short-frontend.vercel.app/"}})  # This allows all origins for now
+# Specify frontend URL for origins
 
 # Define a route for the API endpoint /api/chat that accepts POST requests
 @app.route("/api/chat", methods=['POST'])
