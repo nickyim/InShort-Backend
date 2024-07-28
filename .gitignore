@@ -1,0 +1,21 @@
+# .gitignore
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+
+# Node.js dependencies
+node_modules/
+
+# Next.js specific
+.next/
+out/
+
+# Python dependencies
+*.py[cod]
+
+# Flask/Python configuration and environment files
+instance/
+.envvenv/
+__pycache__/
